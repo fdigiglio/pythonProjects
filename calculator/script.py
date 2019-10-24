@@ -46,6 +46,12 @@ def fahrenheitCelcius():
     fahrenheit =  float((f_float - 32.0) * 5/9)
     print(str(fahrenheit) + " Degrees Celcius!")
 
+def exponents():
+    firstNum = float(input())
+    secondNum = float(input())
+    total  = firstNum ** secondNum
+    print(total) 
+
 #Prints command interface
 print("Welcome to my basic 4 Function Calculator!                ")
 print("What would you like to calculate today?                   ")
