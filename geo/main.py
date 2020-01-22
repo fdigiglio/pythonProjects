@@ -33,9 +33,13 @@ class Polygon(Quadrilaterral):
 
 
 
-z = Parallelogram(4, 2, 4, 3)
-print("This Parallelogram has", z.parallel_lines, "parallel lines,", z.congruent_angles, "congruent angles,", z.congruent_sides, "congruent sides.")
+z = Parallelogram(4, 4, 4, 2)
+print("This Parallelogram has", z.sides, "sides,", z.parallel_lines, "parallel lines,", z.congruent_angles, "congruent angles,", z.congruent_sides, "congruent sides.")
 print(z.parallel_lines)
 z.display()
 
 #write if and else statement checking if it has the specific needed amount of properties in order to be a parallelogram or just a polygon that is also a quadrilaterall        
+
+
+if z.parallel_lines == 4 and z.congruent_angles == 4:
+    print("This is a rectangle")
