@@ -1,28 +1,20 @@
-import random
 import string
-
+string.ascii_letters
+import random
 #Variables
+number = 0
+password = ""
+def letterGeneration():
+    randomLetter = random.choice(string.ascii_letters)
+    return randomLetter
 
-print("Generate a strong password here!")
-print("First type in the length of characters you want!")
-print("Type weak, medium, or strong for a password to be outputed.")
+print("Enter the amount of characters you want your password:")
 userInput = input()
-str(charLength) = userInput
+userInput = int(userInput)
 
-if str(charLength) < 8 and str(charLength) > 18:
-    print("Enter a values greater than 8 and less than 18.")
-elif str(charLength) > 8 and str(charLength) < 18:
-    print("Valid") 
+while number < userInput:
+    number += 1
+    password = password + letterGeneration()
 
-
-#Function for Generating
-def generator(charLength, char = string.ascii_letters + string.digits + string.punctuation):
-    return "".join(random.choice(char) for _ in range(charLength))
-    
-    
-
-runGenerator = generator(charLength)
-
-runGenerator
-
+print(password)
 
