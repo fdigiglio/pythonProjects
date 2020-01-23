@@ -16,5 +16,6 @@ while number < userInput:
     number += 1
     password = password + letterGeneration()
 
-print(password)
+print("Your password is...", password)
+
 
